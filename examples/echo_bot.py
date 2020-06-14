@@ -5,7 +5,7 @@
 
 import telebot
 
-API_TOKEN = '<api_token>'
+API_TOKEN = '1089339124:AAFBgByNvKO7fejdUY3KzuUnA8LtudpSWo0'
 
 bot = telebot.TeleBot(API_TOKEN)
 
@@ -22,7 +22,8 @@ I am here to echo your kind words back to you. Just say anything nice and I'll s
 # Handle all other messages with content_type 'text' (content_types defaults to ['text'])
 @bot.message_handler(func=lambda message: True)
 def echo_message(message):
-    bot.reply_to(message, message.text)
+If message.text=='Ciao'
+    bot.reply_to(message. 'Salve, come va?')
 
 
 bot.polling()
